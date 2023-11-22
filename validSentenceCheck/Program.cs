@@ -2,7 +2,7 @@
 
 namespace validSentenceCheck
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace validSentenceCheck
             }
         }
 
-        static bool IsValidSentence(string sentence)
+        public static bool IsValidSentence(string sentence)
         {
             // Rule 1: String starts with a capital letter
             if (string.IsNullOrWhiteSpace(sentence) || !char.IsUpper(sentence[0])) // Checks if the first character is blank or lowercase
